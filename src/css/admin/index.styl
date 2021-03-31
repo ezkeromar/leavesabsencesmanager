@@ -1,0 +1,451 @@
+.header
+    left 64px !important
+    @media screen and (max-width: 992px)
+        left 0px !important
+
+.aside
+    width 64px !important
+    overflow-x hidden
+    transform translateX(0px)
+    height 100%
+    position absolute
+    @media screen and (max-width: 992px)
+        width 0px !important
+        transform translateX(0px)
+
+.dashboardContainer 
+    padding-left 64px !important
+    min-height 100vh
+    background-color #f2f2f2
+    @media screen and (max-width: 992px)
+        padding-left 0px !important
+
+.contentContainer
+    padding-bottom 130px
+    background-color #f2f2f2
+    height 100%
+    min-height calc(100vh + 10vh - 5vh - 112px)
+
+.dashboardCont
+    padding-left 250px !important
+
+.asideN
+    width 250px !important
+    overflow-x hidden
+    transform translateX(0px) !important
+    height 100%
+    position absolute
+
+.asideN > aside
+    width 250px !important
+    transform translateX(0px) !important
+
+aside
+    background-color $menu !important
+    position absolute !important
+
+.headerN
+    left 250px !important
+
+.transitionLeftMenu
+    transition width 0.5s
+    position fixed
+    z-index 200
+
+.headerNtransition
+    transition left 0.5s
+    box-shadow none
+    height 0px
+    z-index 1000
+
+.headerNtransition > div
+    background-color transparent !important
+    box-shadow none
+    background-image none !important
+
+.headerNtransition > div > button
+    @media screen and (min-width: 1000px)
+        display none !important
+    
+.headerColapseMenu
+    font-size 20px
+
+.dashboardConttransition
+    transition padding-left 0.5s
+
+.slider 
+    width calc(100vw - 81px)
+
+.slider > .q-carousel-quick-nav
+    background transparent
+    margin-bottom 5%
+
+.slider > .q-carousel-quick-nav > button
+    width 30px
+    height 30px
+    color $tertiary !important
+
+.slider > .q-carousel-quick-nav > button > div > i 
+    border 1px solid white
+
+.q-display-3 
+    font-family 'WorkSans-Bold'
+    font-size 55px
+    @media screen and (max-width: 767px)
+        font-size 25px !important
+        max-width 85%
+
+.q-display-4
+    font-family 'WorkSans-Regular'
+    font-size 40px
+    letter-spacing 1px
+    @media screen and (max-width: 767px)
+        font-size 25px !important
+        max-width 85%
+
+.slide-text
+    padding-left 14vw
+    color white
+
+.slideBtn
+    background-color rgba(255, 255, 255, 0.2)
+    color white
+    border 1px solid white
+    margin-top 30px
+    width 120px
+    font-size 15px
+    @media screen and (max-width: 767px)
+        font-size 17px
+        width 150px
+
+.quickNavigation
+    height 75vh
+    width 100%
+    background-color $neutral
+    min-height 530px
+
+.sticky
+    position sticky
+    top 0px
+
+.bottomTitleCont
+    font-family 'Crimson-Roman'
+    margin-top 8vh
+    margin-bottom 5px
+    @media screen and (max-width: 767px)
+        margin-top 5vh
+
+.bottomTitleCont > h4
+    margin 0px
+    font-size 50px
+    letter-spacing 2px
+    @media screen and (max-width: 767px)
+        font-size 25px
+
+.bottomLitleTitleCont > h6
+    font-family 'Crimson-Roman'
+    margin 0px
+    font-size 35px
+    letter-spacing 2px
+    @media screen and (max-width: 767px)
+        font-size 15px
+
+.bottomBarCont > span
+    width 64px
+    border-bottom 2px solid $tertiary
+    margin-top 13px
+    margin-bottom 10vh
+    @media screen and (max-width: 767px)
+        margin-bottom 10vh
+
+.navItem
+    width 70%
+    height auto
+    margin auto
+    cursor pointer
+    @media screen and (max-width: 767px)
+        margin-bottom 10px
+
+.navIcon
+    padding-top 5%
+    padding-bottom 5%
+    background-color #024772
+    color white
+    border-radius 5px 0 0 5px
+
+.navText
+    padding-top 10px
+    padding-bottom 10px
+    background-color white
+    padding-left 10px
+    padding-right 10px
+    overflow hidden
+
+.navIcon > p
+    margin 0px
+    font-size 23px
+    font-weight 700
+
+.navText > p
+    margin 0px
+    font-weight 500
+    font-family 'WorkSans-SemiBold'
+    font-size 20px
+    word-break break-word
+    text-align center
+    max-height 43px
+    overflow hidden
+    @media screen and (max-width: 1550px)
+        font-size 16px
+
+.lastNavig > div:nth-child(1) > .navItem > .navText
+    border-bottom 3px solid #91C8F5
+
+.lastNavig > div:nth-child(2) > .navItem > .navText
+    border-bottom 3px solid #5093C8
+
+.lastNavig > div:nth-child(3) > .navItem > .navText
+    border-bottom 3px solid #366387
+
+
+.adminFooter
+    position absolute
+    left 0
+    width 100%
+    height 120px !important
+    padding-left 15px
+    padding-right 15px
+    bottom 0px
+    background-color #f2f2f2
+    @media screen and (max-width: 400px)
+        display none
+    @media screen and (min-width: 993px)
+        padding-left 80px !important
+
+.adminFooter > .rightText
+    float right
+    margin-bottom 50px
+    margin-top 50px
+    font-size 12px
+    color #a5a5a5
+    font-style italic
+    font-family 'Outsiders_Regular_Italic'
+
+.adminFooter > .leftText
+    float left
+    margin-top 10px
+    font-size 12px
+    color #a5a5a5
+    font-style regular
+    font-family 'Outsiders_Regular_Italic'
+    
+
+aside .q-collapsible-sub-item
+    padding 0px
+
+.firstColapse
+    padding-left 10px !important
+
+aside .q-list
+    border none
+    padding 0px
+
+aside .q-item-side-right
+    position absolute
+    right 0px
+    top 15px
+
+aside .q-item-separator-component
+    margin 0px
+
+.avatarMenu
+    height 100px
+
+aside .q-list-header
+    padding 15px 5px
+
+aside .q-list-header > div > div > img
+    height 45px
+
+aside .q-list-header img
+    height 45px
+
+.asideBottom
+    position absolute
+    bottom 0px
+
+.avatarProfil
+    width 45px
+    height auto
+    border-radius 50%
+    margin-left 5px
+
+.logoutIcon
+    font-size 25px
+    font-weight 200
+    cursor pointer
+    top 9px
+
+.nameMenu
+    font-family 'WorkSans-SemiBold' !important
+    position absolute
+    top 15px
+    padding-left 10px
+    font-size 15px
+    width 140px
+    text-overflow ellipsis
+    white-space nowrap
+    overflow hidden
+    text-transform uppercase
+    
+
+.menuHeight
+    overflow-y auto
+    height 65vh
+    overflow-x hidden
+
+.pictMenu
+    max-width 35px
+    height auto
+    margin 0px
+
+.q-collapsible-sub-item .pictMenu
+    max-width 24px
+
+.q-item-image
+    min-width 30px !important
+    max-width 30px !important
+    width 30px !important
+    height auto
+    margin 0px
+
+.q-collapsible-sub-item .q-item-image
+    max-width 24px !important
+    min-width 24px !important
+    width 24px !important
+
+.active > div > div > div:nth-child(2) > .q-item-label
+    color #00b4ef
+
+.clicked > div:nth-child(2) > .q-item-label
+    color #00b4ef
+
+.logout-pict
+    height 21px !important
+    width 19px !important
+    margin-right 4px !important
+
+.menuContainer .q-item-main
+    font-family 'WorkSans-SemiBold' !important
+    font-size 14px
+    color #919191
+    font-weight 400
+
+.menuContainer .q-collapsible-sub-item .q-item-main
+    font-family 'WorkSans-Regular' !important
+    font-size 14px
+    color #919191
+    font-weight 400
+
+.menuContainer .q-item-label:hover
+    color #565656
+
+.modulesListCont
+    width 100vw
+    height 100vh
+    background-color #f2f2f2
+    z-index 100000
+    position absolute
+    top 0px
+    left 0px
+    color white
+
+.modulesCont
+    margin  auto
+
+.modulesTitle
+    font-family 'WorkSans-Regular'
+    margin-top 0px
+    font-size 45px
+    font-weight 500
+    color #444444
+    padding-left 10px
+
+.listModules
+    background-color white
+    margin auto
+
+.moduleItem
+    margin auto
+    text-align center
+    padding-left 10px
+    padding-right 10px
+    padding-bottom 20px
+    padding-top 20px
+    height auto
+    cursor pointer
+
+.moduleItem > img
+    width 70%
+    height auto
+    max-width 150px
+
+.moduleItem > p
+    font-family 'WorkSans-Regular'
+    font-size 26px
+    color #565656
+    font-weight 600
+
+.moduleItem:hover > p
+    color white
+
+.moduleItem:hover
+    background-color #024772
+    box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.36)
+
+.moduleBtn
+    transition 0.5s
+    left 0
+    background-color #00b4ef
+    height 80px
+    width 100%
+    top 0px
+    position absolute
+    left 0px
+    overflow hidden
+
+.moduleBtn > img
+    margin-left 5px
+    margin-top 15px
+
+.moduleBtn > p
+    font-family 'WorkSans-Regular'
+    font-size 18px
+    font-weight 300
+    line-height 1.64
+    color #ffffff
+    margin-top 25px
+    margin-right 5px
+    float right
+    display inline-block
+
+.modulesBtnContainer
+    height 0px !important
+    overflow hidden
+
+.navIcon > img
+    height 50px
+    width auto
+
+.navItem:hover > .navText
+    background-color #024772 !important
+    color white
+    transition 0.8s
+    border-bottom 3px solid #024772 !important
+
+.takeAllWidth
+    width 95vw
+    height 100%
+
+html
+    background-color #f2f2f2

@@ -1,0 +1,223 @@
+// app global fonts
+@font-face
+    font-family 'Crimson-Bold'
+    src url(../assets/fonts/Crimson-Bold.otf)
+
+@font-face
+    font-family 'Crimson-Roman'
+    src url(../assets/fonts/Crimson-Roman.otf)
+
+@font-face
+    font-family 'Crimson-Semibold'
+    src url(../assets/fonts/Crimson-Semibold.otf)
+
+@font-face
+    font-family 'Outsiders_Regular'
+    src url(../assets/fonts/Outsiders_Regular.otf)
+
+@font-face
+    font-family 'Outsiders_Regular_Itali'
+    src url(../assets/fonts/Outsiders_Regular_Italic.otf)
+
+@font-face
+    font-family 'WorkSans-Bold'
+    src url(../assets/fonts/WorkSans-Bold.otf)
+
+@font-face   
+    font-family 'WorkSans-Light'
+    src url(../assets/fonts/WorkSans-Light.otf)
+
+@font-face
+    font-family 'WorkSans-Regular'
+    src url(../assets/fonts/WorkSans-Regular.otf)
+
+@font-face
+    font-family 'WorkSans-Light'
+    src url(../assets/fonts/WorkSans-Light.otf)
+
+@font-face
+    font-family 'WorkSans-SemiBold'
+    src url(../assets/fonts/WorkSans-SemiBold.otf)
+
+@import 'themes/common.variables.styl'
+@import 'login/app.styl'
+@import 'conge/app.styl'
+@import 'help/app.styl'
+@import 'admin/index.styl'
+@import 'absence/index.styl'
+// @import 'bootstrap-grid.min.css'
+@import 'animate.styl'
+
+// app global css
+.load
+    position fixed
+    background-color #fff
+    height 100%
+    width 100%
+    top 0
+    right 0
+    margin 0
+    z-index 20000
+
+.container
+    width 100%
+    padding-right 15px
+    padding-left 15px
+    margin-right auto
+    margin-left auto
+    @media (min-width:576px)
+        max-width 540px
+    @media (min-width:768px)
+        max-width 720px
+    @media (min-width:992px)
+        max-width 960px
+    @media (min-width:1200px)
+        max-width 1140px
+
+.cursor
+    cursor pointer
+
+.q-notification > div > .q-alert-side
+    background-color #1e87da
+
+.q-notification > div > .q-alert-content > div
+    font-family 'WorkSans-Regular'
+    font-size 15px
+    font-weight normal
+    font-style normal
+    font-stretch normal
+    line-height 1.14
+    letter-spacing normal
+    text-align center
+    color #1e87da
+
+.q-notification > .bg-negative > .q-alert-content > div
+    color white
+
+.q-notification > .bg-negative > .q-alert-side
+    background-color #e65541 !important
+
+.q-notification > .bg-info > .q-alert-content > div
+    color white
+
+.q-notification > .bg-info > .q-alert-side
+    background-color #006cc2 !important
+
+.q-notification > .bg-info > .q-alert-content
+    background-color white !important
+
+.q-notification > .bg-info > .q-alert-content > div
+    color #006cc2 !important
+    font-weight bold
+
+
+.q-notification > .bg-info
+    background-color white !important
+
+.modal-content
+    width 50vw
+    border-radius 5px
+    background-color #ffffff
+    position relative
+    max-width 800px !important
+
+.modal-header
+    font-family 'WorkSans-Regular'
+    font-size 19px
+    font-style normal
+    font-stretch normal
+    line-height 1.2
+    letter-spacing normal
+    color #006cc2
+    text-align left
+    font-weight 600
+    position relative
+
+.modal-header:before
+    content ''
+    position absolute
+    bottom 40%
+    border-bottom 1px #242424 solid
+    z-index 0
+    left 197px
+    width -webkit-calc(100% - 214px)
+    width -moz-calc(100% - 214px)
+    width calc(100% - 214px)
+
+.modal-body
+    font-family 'WorkSans-Regular'
+    font-size 15px
+    font-weight normal
+    font-style normal
+    font-stretch normal
+    line-height 1.16
+    letter-spacing normal
+    text-align left
+    color #242424
+
+.modal-buttons > button:nth-child(1)
+    border-radius 2px
+    color #006cc2 !important
+    font-family 'WorkSans-Regular'
+    font-weight 600
+    width 80px
+    line-height 1.17
+    margin-bottom 10px
+
+.modal-buttons > button:nth-child(2)
+    border-radius 2px
+    border solid 1px #006cc2
+    color #ffffff !important
+    font-family 'WorkSans-Regular'
+    font-weight 600
+    width 80px
+    line-height 1.17
+    margin-bottom 10px
+    margin-right 10px
+
+.relativePlacing
+    position relative
+
+.q-tooltip
+    z-index 10000000000
+
+.textalignc
+    text-align center
+
+.popUpBox
+    position fixed
+    height 100vh
+    width 100%
+    left 0px
+    top 0px
+    display flex
+    align-items center
+    justify-content center
+    padding: 0px
+    background-color rgba(0,0,0,0.6)
+    z-index 1000
+
+.popUpContainer
+    background-color rgba(0, 0, 0, 0.6)
+    position fixed
+    height 100%
+    width 100%
+    z-index 1000
+    left 0px
+
+.popUpDialogBox
+    background-color #fff
+    position relative
+    z-index 10000
+    padding 15px 0
+    border-radius 10px
+    box-shadow 0 3px 8px rgba(0,0,0,0.2), 0 4px 4px rgba(0,0,0,0.14), 0 8px 7px 6px rgba(0,0,0,0.12)
+
+.closeIcon
+    position absolute
+    font-size 19px
+    top 5px
+    right 5px
+    cursor pointer
+
+.alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}.alert-heading{color:inherit}.alert-link{font-weight:700}.alert-dismissible{padding-right:4rem}.alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit}.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}.alert-primary hr{border-top-color:#9fcdff}.alert-primary .alert-link{color:#002752}.alert-secondary{color:#383d41;background-color:#e2e3e5;border-color:#d6d8db}.alert-secondary hr{border-top-color:#c8cbcf}.alert-secondary .alert-link{color:#202326}.alert-success{color:#155724;background-color:#d4edda;border-color:#c3e6cb}.alert-success hr{border-top-color:#b1dfbb}.alert-success .alert-link{color:#0b2e13}.alert-info{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb}.alert-info hr{border-top-color:#abdde5}.alert-info .alert-link{color:#062c33}.alert-warning{color:#856404;background-color:#fff3cd;border-color:#ffeeba}.alert-warning hr{border-top-color:#ffe8a1}.alert-warning .alert-link{color:#533f03}.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}.alert-danger hr{border-top-color:#f1b0b7}.alert-danger .alert-link{color:#491217}.alert-light{color:#818182;background-color:#fefefe;border-color:#fdfdfe}.alert-light hr{border-top-color:#ececf6}.alert-light .alert-link{color:#686868}.alert-dark{color:#1b1e21;background-color:#d6d8d9;border-color:#c6c8ca}.alert-dark hr{border-top-color:#b9bbbe}.alert-dark .alert-link{color:#040505}
